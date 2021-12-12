@@ -6,8 +6,8 @@ import AboutPage from './Pages/AboutPage';
 import ExperiencePage from './Pages/ExperiencePage';
 import EducationPage from './Pages/EducationPage';
 import ProjectsListPage from './Pages/ProjectsListPage';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import 'jquery/dist/jquery.min.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import 'jquery/dist/jquery.min.js';
 
 const NavBar = () => (
     <React.Fragment>
