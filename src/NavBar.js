@@ -11,8 +11,14 @@ import 'jquery/dist/jquery.min.js';
 
 const NavBar = () => (
     <React.Fragment>
+
+    {/* <div dangerouslySetInnerHTML={{
+      __html: `<video  autoPlay loop muted playsInline className='videoTag' autoPlay loop muted>
+      <source src=${tunnel} type='video/mp4' />
+    </video>`, 
+    }} /> */}
     
-    <video className='videoTag' autoPlay loop muted>
+    <video className='videoTag' autoPlay playsInLine loop muted>
       <source src={tunnel} type='video/mp4' />
     </video>
 

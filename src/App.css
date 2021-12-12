@@ -3,6 +3,7 @@
 html, body {
   width: 100%;
   height:100%;
+  background: black;
 }
 
 body {
@@ -296,6 +297,7 @@ ul {
 }
 
 .pages-full{
+  position: relative;
   display: flex;
   color: white;
   margin-left: 15vh;
