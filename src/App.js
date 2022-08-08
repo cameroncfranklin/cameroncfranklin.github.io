@@ -5,7 +5,7 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-import HomePage from './Pages/HomePage'; // Need to import our component before we can use it
+// import HomePage from './Pages/HomePage'; 
 import AboutPage from './Pages/AboutPage';
 import ProjectsListPage from './Pages/ProjectsListPage';
 import ProjectsPage from './Pages/ProjectsPage';
@@ -35,10 +35,10 @@ function App() {
             {/*NotFoundPage must be the last one since it has no path and is not exact (Thanks to switch, it doesn't render on every page)*/}
             <Route component={NotFoundPage} />
           </Switch>
-          <footer>
+          {/* <footer>
             <p>Cameron Franklin 2022</p>
             <p>Stock video by Engin Akyurt from Pixabay </p>
-          </footer>
+          </footer> */}
         </div>
       </div>
     </Router>    

@@ -1,17 +1,20 @@
-import React from 'react'; // This is how we add React to our Pages
-import photoOfMe from '../Assets/Cam_Photo.jpg'; 
-// We'll create the AboutPage component here
+import React from 'react'; 
+import gradPic from '../Assets/Graduation_Pic.jpg';
+// import photoOfMe from '../Assets/Cam_Photo.jpg'; 
+
 const AboutPage = () => (
     <React.Fragment>
         <section className="pages-full"> 
-            <img src={photoOfMe} alt="" width="500" height="720"/> 
-            {/* <h1> Hello! </h1>
-            <h1> My name's Cameron</h1> */}
+
+            {/********************* GRADUATION PHOTO **********************/}
+            <img src={gradPic} alt="Me at graduation" id="photoOfMe"/> 
             <br/>
+
+            {/********************* ABOUT ME **********************/}
             <div className = "text-container">
                 <div className = "container-content">
-                <h1> Welcome, </h1>
-                <h1> I'm Cameron.</h1>
+                    <h1> Welcome, </h1>
+                    <h1> I'm Cameron.</h1>
                     <p>
                         A little bit about me: I am an aspiring software engineer from Los Angeles
                         (From the Valley to Palmdale) who's interested in building innovative, cutting-edge applications. 
@@ -37,5 +40,4 @@ const AboutPage = () => (
     
 )
 
-// Need to export our page 
 export default AboutPage;

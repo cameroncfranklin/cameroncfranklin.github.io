@@ -1,14 +1,18 @@
-import React, { useState, useEffect } from 'react'; // This is how we add React to our Pages
-// Our components don't have any form of memory, so state gives us a place to temp. store info from the server
-// React hooks allow to abstract away state management from our components
+import React, { useState, useEffect } from 'react'; 
 import projectsContent from './projects-content';
 import ProjectsList from '../Components/ProjectsList';
 import UpvotesSection from '../Components/UpvotesSection';
-import CommentsList from '../Components/CommentsList';
-import AddCommentForm from '../Components/AddCommentForm';
-import NotFoundPage from './NotFoundPage';
-// We'll create the ProjectsPage component here
-// React router sends the match prop to our component, which contains information such as the current url and if matches the route's path
+// import CommentsList from '../Components/CommentsList';
+// import AddCommentForm from '../Components/AddCommentForm';
+// import NotFoundPage from './NotFoundPage';
+
+{/*
+ We'll create the ProjectsPage component here
+ React router sends the match prop to our component, which contains information such as the current url and if matches the route's path
+ Our components don't have any form of memory, so state gives us a place to temp. store info from the server
+ React hooks allow to abstract away state management from our components
+*/}
+
 const ProjectsPage = ({ match }) => {
    // Fetch is the built-in API we can use to connect the front/back ends. Tells which endpoint to hit
 
@@ -31,7 +35,7 @@ const ProjectsPage = ({ match }) => {
    }, [name]); // We pass the empty array to tell useEffect that we only want it to call when the component's name changes
 
    // Error message
-   if (!project) return <NotFoundPage />
+   // if (!project) return <NotFoundPage />
    
    // Recommended articles
    const otherProjects = projectsContent.filter(project => project.name !== name);
