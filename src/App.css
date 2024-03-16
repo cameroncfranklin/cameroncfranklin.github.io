@@ -3,7 +3,7 @@
 html, body {
   width: 100%;
   height:100%;
-  background: gray;
+  background: #CEB7B3;
 }
 body {
     font-family: "Century Gothic", 'Lato', sans-serif;
@@ -350,7 +350,7 @@ ul {
 -------------------------------------*/
 .tilesWrap {
 	padding: 0;
-	margin: 10px auto;
+	/* margin: 10px auto; */
   /* margin-top: 20vh; */
 	list-style: none;
 	text-align: center;
@@ -702,3 +702,8 @@ ul {
     }
 } */
 
+footer {
+  margin-top: 20px;
+  margin-left: 55px;
+  width: 75%;
+}
