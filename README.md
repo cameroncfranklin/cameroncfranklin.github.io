@@ -1,3 +1,19 @@
+# Deploying this application
+
+Pull repository. Use `npm install` (one- time step). Install gh-pages with `npm install gh-pages` (one-time step). Test app with `npm start`, then build with  `npm run build`. Ensure in repository settings that the repo is public and has gh-pages as its source. If not, 
+you will be seeing the README whenever you deploy changes. 
+
+When ready to deploy, run `npm run deploy`. See troubleshooting here: 
+
+    For 404 issues: 
+        - https://stackoverflow.com/questions/11577147/how-to-fix-http-404-on-github-pages
+    
+    For not seeing app issues
+        - https://stackoverflow.com/questions/73807870/npm-run-deploy-not-working-after-trying-to-deploy-my-react-app-to-github
+ 
+
+### React Read Me Below
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
